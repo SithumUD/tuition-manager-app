@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Assign Students"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <!-- Select Class Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Select Class"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <!-- Class List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/classRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="16dp"
+            android:background="#E0E0E0"/>
+
+        <!-- Select Students Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Students"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <!-- Search Bar -->
+        <EditText
+            android:id="@+id/searchStudentsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/title"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/search_background"
+            android:drawablePadding="8dp"
+            android:hint="Search students..."
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"/>
+
+        <!-- Students List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/studentsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Clear Selection Button -->
+        <Button
+            android:id="@+id/clearSelectionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:text="Clear Selection"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"/>
+
+        <!-- Assign Button -->
+        <Button
+            android:id="@+id/assignButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Assign to Grade 10 - Mathematics"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</ScrollView>

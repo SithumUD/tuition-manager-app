@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Tution Manager</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="timeframe_options">
+        <item>This Month</item>
+        <item>This Week</item>
+        <item>This Year</item>
+        <item>Custom Range</item>
+    </string-array>
+
+    <string-array name="class_grade_options">
+        <item>All Classes</item>
+        <item>Grade 9</item>
+        <item>Grade 10</item>
+        <item>Grade 11</item>
+        <item>Grade 12</item>
+    </string-array>
+
+    <string-array name="group_by_options">
+        <item>Day</item>
+        <item>Week</item>
+        <item>Month</item>
+        <item>Subject</item>
+    </string-array>
+
+    <string-array name="subject_options">
+        <item>All Subjects</item>
+        <item>Mathematics</item>
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>English</item>
+    </string-array>
+
+    <string-array name="assessment_options">
+        <item>All Assessments</item>
+        <item>Tests</item>
+        <item>Quizzes</item>
+        <item>Assignments</item>
+    </string-array>
+
+</resources>

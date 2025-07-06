@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Class Management"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/search_background"
+        android:drawablePadding="8dp"
+        android:hint="Search classes..."
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+
+    <!-- Classes Section -->
+    <TextView
+        android:id="@+id/classesHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchEditText"
+        android:layout_marginTop="24dp"
+        android:text="Classes"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <!-- Classes List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/classesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/classesHeader"
+        android:layout_marginTop="8dp"/>
+
+
+
+    <!-- Floating Action Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:contentDescription="Add new class"
+        android:src="@drawable/ic_arrow_drop_down"
+        app:backgroundTint="@color/colorPrimary"
+        app:tint="@android:color/white"/>
+</RelativeLayout>

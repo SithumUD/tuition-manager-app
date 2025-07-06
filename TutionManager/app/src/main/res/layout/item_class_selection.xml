@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="12dp">
+
+    <RadioButton
+        android:id="@+id/classRadioButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/colorPrimary"
+        android:text="Grade 10 - Mathematics"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/teacherTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Teacher: Sarah Johnson"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/studentCountTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="25 students"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"/>
+</LinearLayout>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register New User"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:text="Add a new student, teacher, or admin to the system"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"/>
+
+        <!-- User Type Tabs -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/tab_background"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnStudent"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/tab_selector"
+                android:text="Student"
+                android:textAllCaps="false"
+                android:textColor="@color/tab_text_selector"
+                android:stateListAnimator="@null"/>
+
+            <Button
+                android:id="@+id/btnTeacher"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/tab_selector"
+                android:text="Teacher"
+                android:textAllCaps="false"
+                android:textColor="@color/tab_text_selector"
+                android:stateListAnimator="@null"/>
+
+            <Button
+                android:id="@+id/btnAdmin"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/tab_selector"
+                android:text="Admin"
+                android:textAllCaps="false"
+                android:textColor="@color/tab_text_selector"
+                android:stateListAnimator="@null"/>
+        </LinearLayout>
+
+        <!-- Common Fields -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Name *"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/txtfirstname"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext_background"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Name *"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/txtsecondname"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext_background"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email *"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/txtemail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext_background"
+            android:inputType="textEmailAddress"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number *"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/txtphonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext_background"
+            android:inputType="phone"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password *"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/txtpassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext_background"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password *"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/txtcpassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_background"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"/>
+
+        <!-- Dynamic Fields Container -->
+        <LinearLayout
+            android:id="@+id/dynamicFieldsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Student Specific Fields -->
+            <LinearLayout
+                android:id="@+id/studentFields"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Grade/Class"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"/>
+
+                <Spinner
+                    android:id="@+id/txtclass"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/edittext_background"/>
+            </LinearLayout>
+
+            <!-- Teacher Specific Fields -->
+            <LinearLayout
+                android:id="@+id/teacherFields"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Subject"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"/>
+
+                <Spinner
+                    android:id="@+id/txtsubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/edittext_background"/>
+            </LinearLayout>
+
+            <!-- Admin Specific Fields -->
+            <LinearLayout
+                android:id="@+id/adminFields"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Department"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"/>
+
+                <Spinner
+                    android:id="@+id/txtdepartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/edittext_background"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Access Level"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"/>
+
+                <RadioGroup
+                    android:id="@+id/accessLevelRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radioStandard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Standard Admin"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="Standard: Basic admin privileges"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="12sp"/>
+
+                    <RadioButton
+                        android:id="@+id/radioSupervisor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Supervisor"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="Supervisor: Additional management capabilities"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="12sp"/>
+
+                    <RadioButton
+                        android:id="@+id/radioSuper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Super"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:text="Super: Full system access (use with caution)"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="12sp"/>
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:text="Register Student"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"/>
+
+        <!-- Recent Registrations Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Recent Registrations"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <!-- Recent Registration Items -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recentRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

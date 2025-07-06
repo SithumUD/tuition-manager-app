@@ -1,0 +1,10 @@
+<!-- ic_assign_students.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M16,4c0,-1.11 0.89,-2 2,-2s2,0.89 2,2 -0.89,2 -2,2 -2,-0.89 -2,-2zM21,7h-3.5l-1.19,3.75L15.5,16h-2l1.12,-5.25L13,9.5v7.5h-2V9.5L9,11.5 8,7h13z"/>
+</vector>

@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "453763489636",
-    "project_id": "tution-manager-f4fc4",
-    "storage_bucket": "tution-manager-f4fc4.firebasestorage.app"
+    "project_number": "209974978191",
+    "project_id": "tuition-manager-app",
+    "storage_bucket": "tuition-manager-app.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:453763489636:android:205f4ef4963748a4eaa471",
+        "mobilesdk_app_id": "1:209974978191:android:44e7f07cafb8668c7ff2fa",
         "android_client_info": {
           "package_name": "com.example.tutionmanager"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyB_qcBtmOR5nEGBN0h7o4hedix3HCVvySE"
+          "current_key": "AIzaSyAYvlnzD0ahrBEdNuEAx3ElcdAdGPoZ_P8"
         }
       ],
       "services": {
